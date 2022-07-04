@@ -1,6 +1,10 @@
 <template>
   <div class="row">
-    <div class="bar-drop" :class="{ active: isDropDown }" @click="handleDropdown">
+    <div
+      class="bar-drop"
+      :class="{ active: isDropDown }"
+      @click="handleDropdown"
+    >
       <span>Chọn tỉnh thành</span>
       <svg
         width="8"
@@ -88,7 +92,6 @@ export default {
   },
   watch: {
     acceptedProvince(arr) {
-      console.log(arr);
       if (arr.length > 0) {
         this.isBtnActive = true;
         this.isDisplay = true;
@@ -109,11 +112,9 @@ export default {
       setTimeout(() => {
         this.acceptedProvince = [...this.selectedProvince];
       }, 200);
-      console.log(this.acceptedProvince);
     },
     handleAccept() {
       this.currentProvice = this.selectedProvince;
-      console.log(this.acceptedProvince);
       this.isDropDown = !this.isDropDown;
     },
     handleClose() {
@@ -123,7 +124,6 @@ export default {
       const index = this.selectedProvince.findIndex(
         (province) => province.id === id
       );
-      console.log(index);
       this.selectedProvince.splice(index, 1);
       this.acceptedProvince = [...this.selectedProvince];
     },
