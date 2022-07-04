@@ -27,16 +27,16 @@
               v-model="selectedProvince"
             />
             <img
-              class="list-item__uncheckedmarkimg"
-              src="../assets/img/uncheckedmark.png"
+              class="list_item--unchecked"
+              src="../assets/img/unchecked.png"
               alt="unchecked"
             />
             <img
-              class="list-item__checkedmarkimg"
-              src="../assets/img/checkedmark.png"
+              class="list_item--checked"
+              src="../assets/img/checked.png"
               alt="checked"
             />
-            <span>
+            <span class="list_name">
               {{ province.name }}
             </span>
           </label>
@@ -161,17 +161,20 @@ export default {
   display: flex;
   align-items: center;
 }
+.list_name{
+  margin-left: 10px;
+}
 input[type="checkbox"] {
   appearance: none;
 }
-input[type="checkbox"]:checked ~ .list-item__checkedmarkimg {
+input[type="checkbox"]:checked ~ .list_item--checked {
   display: block;
 }
 
-input[type="checkbox"]:checked ~ .list-item__uncheckedmarkimg {
+input[type="checkbox"]:checked ~ .list_item--unchecked {
   display: none;
 }
-.list-item__checkedmarkimg {
+.list_item--checked {
   display: none;
 }
 .btns {
@@ -181,7 +184,7 @@ input[type="checkbox"]:checked ~ .list-item__uncheckedmarkimg {
   color: #067ec4;
   border: none;
   background-color: #fff;
-  margin-left: 1.5rem;
+  padding: 15px;
 }
 .btn-noActive {
   border: none;
