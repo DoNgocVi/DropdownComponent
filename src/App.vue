@@ -20,6 +20,7 @@ export default {
         { id: 5, name: "Thanh Hóa" },
         { id: 6, name: "Nghệ An" },
         { id: 6, name: "Vĩnh Phúc" },
+        { id: 8, name: "Khánh Hoà" },
       ],
     };
   },
