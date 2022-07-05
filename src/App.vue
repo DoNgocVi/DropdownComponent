@@ -19,8 +19,6 @@ export default {
         { id: 4, name: "Nam Định" },
         { id: 5, name: "Thanh Hóa" },
         { id: 6, name: "Nghệ An" },
-        { id: 7, name: "Quang Nam" },
-        { id: 8, name: "Hue" },
       ],
     };
   },
