@@ -21,6 +21,8 @@ export default {
         { id: 6, name: "Nghệ An" },
         { id: 6, name: "Vĩnh Phúc" },
         { id: 8, name: "Khánh Hoà" },
+        { id: 8, name: "Cà mau" },
+        
       ],
     };
   },
