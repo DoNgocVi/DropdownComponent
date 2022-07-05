@@ -21,7 +21,12 @@ export default {
         { id: 6, name: "Nghệ An" },
         { id: 6, name: "Vĩnh Phúc" },
         { id: 8, name: "Khánh Hoà" },
+<<<<<<< HEAD
         { id: 9, name: "Kiên Giang" },
+=======
+        { id: 8, name: "Cà mau" },
+        
+>>>>>>> 8406c620bff498dc9ac8c11a53af5a2c7674e6df
       ],
     };
   },
